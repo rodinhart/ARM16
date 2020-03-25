@@ -13,45 +13,70 @@
 
 ## Instruction set
 
-| Assembly | Bits | IN1 | IN2 | IN3 | OUT | Notes
-| -------- | ---- | ----- | --- | --- | --- | ---
-| ldr Rd, [Ra, #x] | `aaad dd00 xxxx xxxx` | Ra   |    | IR  | RAM->Rd
-| str Rm, [Ra, #x] | `aaam mm01 xxxx xxxx` | Ra   | Rm | IR  |         | could have writeback?
-| alu Ra, #x       | `aaad dd10 xxxx xxxx` | Ra   |    | IR  | ALU->Ra
-| b\<c\> x         | `cccc xx11 0xxx xxx0` | R7   |    | IR  | ALU->7
-| swi x            | `xxxx xx11 0xxx xxx1` | 8000 |    | IR  | ALU->7
-| shu Ra, #x       | `aaad dd11 1000 xxxx` | Ra   |    | IR  | ALU->Ra
-| alu Ra, Rm       | `aaad dd11 1001 0mmm` | Ra   | Rm | IN2 | ALU->Ra
-| shu Ra, Rm       | `aaad dd11 1001 1mmm` | Ra   | Rm | IN2 | ALU->Ra
+| Assembly | Bits | IN1 | IN2 | IN3 | OUT
+| -------- | ---- |:---:|:---:|:---:|:---:
+| ldr Rd, [Ra, #x] | `00dd daaa xxxx xxxx` | Ra   |    | IR  | RAM->Rd
+| str Rm, [Ra, #x] | `01mm maaa xxxx xxxx` | Ra   | Rm | IR  |
+| alu Ra, #x       | `10zz zaaa xxxx xxxx` | Ra   |    | IR  | ALU->Ra
+| b\<c\> x         | `110c cccx xxxx xxx0` | R7   |    | IR  | ALU->7
+| swi x            | `110x xxxx xxxx xxx1` | 8000 |    | IR  | ALU->7
+| shu Ra, #x       | `1110 0aaa 1zzz xxxx` | Ra   |    | IR  | ALU->Ra
+| lnk Ra           | `1110 0aaa 1111 xxxx` | R7   |    | IR  | ALU->Ra
+| alu Ra, Rm       | `1110 1aaa 0zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra
+| shu Ra, Rm       | `1110 1aaa 1zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra
 
-```txt
-cccc
-0000 nv     0100 cc/lo  1000 vc  1100 lt
-0001 eq     0101 mi     1001 hi  1101 gt
-0010 ne     0110 pl     1010 ls  1110 le
-0011 cs/hs  0111 vs     1011 ge  1111 al
+## Condition codes
 
-dddd
-0000 mov   0100 add   1000 lsl   1100 rrx
-0001 and   0101 adc   1001 lsr   1101 cmp
-0010 orr   0110 sub   1010 asr   1110 tst
-0011 eor   0111 sbc   1011 ror   1111
+|cccc  |     |      |     |      |  |      |
+|:----:|-----|------|-----|------|--|------|--
+|`0000`|nv   |`0100`|cc/lo|`1000`|vc|`1100`|lt
+|`0001`|eq   |`0101`|mi   |`1001`|hi|`1101`|gt
+|`0010`|ne   |`0110`|pl   |`1010`|ls|`1110`|le
+|`0011`|cs/hs|`0111`|vs   |`1011`|ge|`1111`|al
 
-ddd ALU                ddd SHU
-000 mov   100 add      000 lsl   100 rrx
-001 and   101 adc      001 lsr
-010 orr   110 sub      010 asr
-011 eor   111 sbc      011 ror   111 lnk
 
-sr = NZCV .... .... ....
-```
+## Arithmetic and Logic Unit
+
+|zzz  |Operation|Flags affected
+|:---:|---------|--------------
+|`000`|mov      |NZ
+|`001`|and      |NZ
+|`010`|not      |NZ
+|`011`|eor      |NZ
+|`100`|add      |CNZV
+|`101`|adc      |CNZV
+|`110`|sub      |CNZV
+|`111`|sbc      |CNZV
+
+
+## Shift Unit
+
+|zzz  |Operation|Flags affected
+|:---:|---------|--------------
+|`000`|lsl      |CNZ
+|`001`|lsr      |CNZ
+|`010`|asr      |CNZ
+|`011`|ror      |CNZ
+|`100`|rrx      |CNZ
+|`101`|         |
+|`110`|         |
+|`111`|lnk      |CNZV
+
+## Status flags
+
+|Status bit|flag|
+|---------:|-|
+|`0001`    |C
+|`0010`    |N
+|`0100`    |Z
+|`1000`    |V
 
 
 ## Memory map
 ```txt
       +-------------+
  0000 | reset       | 8 words
- 0010 | mapped io   | 4kb - 8 words
+ 0010 | mapped IO   | 4kb - 8 words
  1000 |             |                  ROM
       |             |
       |             |
@@ -68,4 +93,3 @@ sr = NZCV .... .... ....
 
 - Can we load from byte boundary (as opposed to word boundary)
 - Can we set/clear/read status bits?
-- MVN? (not)

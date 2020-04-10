@@ -13,8 +13,9 @@
 
 ## Instruction set
 
-| Assembly | Bits | IN1 | IN2 | IN3 | OUT
-| -------- | ---- |:---:|:---:|:---:|:---:
+| Assembly         | Bits                  | IN1  | IN2| IN3 | OUT
+| ---------------- | --------------------- |:----:|:--:|:---:|:------:|
+| fetch            |                       | R7   |    | 0   | RAM->IR
 | ldr Rd, [Ra, #x] | `00dd daaa xxxx xxxx` | Ra   |    | IR  | RAM->Rd
 | str Rm, [Ra, #x] | `01mm maaa xxxx xxxx` | Ra   | Rm | IR  |
 | alu Ra, #x       | `10zz zaaa xxxx xxxx` | Ra   |    | IR  | ALU->Ra
@@ -24,6 +25,19 @@
 | lnk Ra           | `1110 0aaa 1111 xxxx` | R7   |    | IR  | ALU->Ra
 | alu Ra, Rm       | `1110 1aaa 0zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra
 | shu Ra, Rm       | `1110 1aaa 1zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra
+
+```txt
+R enable = fetch AND 7
+R enable = NOT fetch 
+
+RAM enable = fetch OR NOT b15
+ALU enable = NOT fetch AND b15
+
+IR load = fetch
+R load = NOT fetch AND NOT b15 AND NOT b14 AND Rd
+R load = NOT fetch AND b15 AND (NOT b14 OR b13) AND Ra
+R load = NOT fetch AND b15 AND (b14 AND NOT b13) AND 7
+```
 
 ## Condition codes
 

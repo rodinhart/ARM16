@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/karen/ARM16/blink_isim_beh.exe" -prj "/home/karen/ARM16/blink_beh.prj" "work.blink" "work.glbl" 

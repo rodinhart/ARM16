@@ -35,16 +35,16 @@ An attempt to design and build a Minimized Instruction Set Computer (MISC). The 
 
 | Assembly         | Bits                  | IN1  | IN2| IN3 | OUT    | Notes
 | ---------------- | --------------------- |:----:|:--:|:---:|:------:|------
-| fetch            |                       | R7   |    | 0   | RAM->IR| pseudo instruction to fetch word at R7 into IR, and increase R7 by 2
-| ldr Rd, [Ra, #x] | `00dd daaa xxxx xxxx` | Ra   |    | IR  | RAM->Rd| load contents of memory location Ra + #x into Rd
-| str Rm, [Ra, #x] | `01mm maaa xxxx xxxx` | Ra   | Rm | IR  |        | store Rm into memory location Ra + #x
-| alu Ra, #x       | `10zz zaaa xxxx xxxx` | Ra   |    | IR  | ALU->Ra| ALU operation on Ra and #x, placing result in Ra
-| b\<c\> x         | `110c cccx xxxx xxx0` | R7   |    | IR  | ALU->7 | conditional branch by placing R7 + #x in R7
-| swi x            | `110x xxxx xxxx xxx1` | 8000 |    | IR  | ALU->7 | software interrupt by placing 8000 + #x in R7
-| shu Ra, #x       | `1110 0aaa 1zzz xxxx` | Ra   |    | IR  | ALU->Ra| SHU operation on Ra an #x, placing result in Ra
-| lnk Ra           | `1110 0aaa 1111 xxxx` | R7   |    | 2   | ALU->Ra| put return address into Ra by placing R7 + 2 into Ra
-| alu Ra, Rm       | `1110 1aaa 0zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra| ALU operation on Ra and Rm, placing result in Ra
-| shu Ra, Rm       | `1110 1aaa 1zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra| SHU operation on Ra and Rm, placing result in Ra
+| fetch            |                       | R7   |    | 0   | RAM->IR| IR <- [R7], R7 <- R7 + 2
+| ldr Rd, [Ra, #x] | `00dd daaa xxxx xxxx` | Ra   |    | IR  | RAM->Rd| Rd <- [Ra + #x]
+| str Rm, [Ra, #x] | `01mm maaa xxxx xxxx` | Ra   | Rm | IR  |        | Rm -> [Ra + #x]
+| alu Ra, #x       | `10zz zaaa xxxx xxxx` | Ra   |    | IR  | ALU->Ra| Ra <- ALU(Ra, #x)
+| b\<c\> x         | `110c cccx xxxx xxx0` | R7   |    | IR  | ALU->7 | R7 <- R7 + #x, if condition true
+| swi x            | `110x xxxx xxxx xxx1` | 8000 |    | IR  | ALU->7 | R7 <- 8000 + #x
+| shu Ra, #x       | `1110 0aaa 1zzz xxxx` | Ra   |    | IR  | ALU->Ra| Ra <- SHU(Ra, #x)
+| lnk Ra           | `1110 0aaa 1111 xxxx` | R7   |    | 2   | ALU->Ra| Ra <- R7 + 2
+| alu Ra, Rm       | `1110 1aaa 0zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra| Ra <- ALU(Ra, Rm)
+| shu Ra, Rm       | `1110 1aaa 1zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra| Ra <- SHU(Ra, Rm)
 
 ```txt
 R enable = fetch AND 7

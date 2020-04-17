@@ -1,4 +1,7 @@
-# ARM16
+# MISC16
+
+A Minimized Instruction Set Computer
+
 - 2 clock cycles per instruction
   - rising edge instruction fetch?
   - falling edge for exec?

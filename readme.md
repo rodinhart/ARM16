@@ -1,15 +1,31 @@
 # MISC16
 
-A Minimized Instruction Set Computer
+An attempt to design and build a Minimized Instruction Set Computer (MISC). The MISC should be straightforward to build on breadboards (inspired by Ben Eater) or on an FPGA development board. To achieve this the data paths and instruction set should be as simple and regular as possible while still being useable. This resulted in the following design decisions:
 
-- 2 clock cycles per instruction
-  - rising edge instruction fetch?
-  - falling edge for exec?
-- 16 bit instructions word aligned
-- 16 bit registers
-- 8 registers, R7 is program counter
-- 4 bit status register
-- status register always updated on ALU operations
+- RISC inspired architecture
+  - Data operations only on registers, not on memory
+  - Transfer instructions to load from and store to memory
+  - Generic registers, one of which functions as the program counter
+- Fixed 16 bit instructions, word aligned
+  - For data instruction the target register and first operand register are the same. This is to allow more space for immediate constants.
+  - Could make it fit with 8 bit architecture... yet
+- 8 registers of 16 bit wide
+  - R7 is the program counter
+- 4 bit status register, C N Z V
+  - always updated
+  - only the branch instruction is conditional
+- 16 bit instruction register
+- Every instruction takes 2 clock cycles
+  - 1 cycle to fetch
+  - 1 cycle to execute
+  - no microcode, just combinatorical logic
+  - trade off is that only one type of update can be done
+    - This means branch and link are two separate instructions
+    - There is no write-back for stack operations
+- Dedicated data paths using multiplexors for the two operands and output
+  - so no tristate busses
+
+
 
 ## Data paths
 ![datapaths](comp_arch.png)

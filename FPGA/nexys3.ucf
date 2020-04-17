@@ -1,0 +1,50 @@
+Net "SW0" Loc=T10;
+Net "SW1" Loc=T9;
+Net "SW2" Loc=V9;
+Net "SW3" Loc=M8;
+Net "SW4" Loc=N8;
+Net "SW5" Loc=U8;
+Net "SW6" Loc=V8;
+Net "SW7" Loc=T5;
+
+Net "LD0" Loc=U16;
+Net "LD1" Loc=V16;
+Net "LD2" Loc=U15;
+Net "LD3" Loc=V15;
+Net "LD4" Loc=M11;
+Net "LD5" Loc=N11;
+Net "LD6" Loc=R11;
+Net "LD7" Loc=T11;
+
+Net "BTNL" Loc=C4;
+Net "BTNR" Loc=D9;
+Net "BTNU" Loc=A8;
+Net "BTND" Loc=C9;
+Net "BTNS" Loc=B8;
+
+Net "GCLK0" Loc=V10;
+
+Net "CA" Loc=T17;
+Net "CB" Loc=T18;
+Net "CC" Loc=U17;
+Net "CD" Loc=U18;
+Net "CE" Loc=M14;
+Net "CF" Loc=N14;
+Net "CG" Loc=L14;
+Net "DP" Loc=M13;
+
+Net "AN0" Loc=N16;
+Net "AN1" Loc=N15;
+Net "AN2" Loc=P18;
+Net "AN3" Loc=P17;
+
+Net "RED0" Loc=U7;
+Net "RED1" Loc=V7;
+Net "RED2" Loc=N7;
+Net "GREEN0" Loc=P8;
+Net "GREEN1" Loc=T6;
+Net "GREEN2" Loc=V6;
+Net "BLUE0" Loc=R7;
+Net "BLUE1" Loc=T7;
+Net "HSYNC" Loc=N6;
+Net "VSYNC" Loc=P7;

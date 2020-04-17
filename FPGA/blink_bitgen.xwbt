@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/karen/ARM16/blink.ncd
+OUTFILE=/home/karen/ARM16/blink.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=/home/karen/ARM16
+LICENSE=WebPack
+USER_INFO=211926549_0_0_479

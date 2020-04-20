@@ -1,30 +1,50 @@
-# ARM16
-- 2 clock cycles per instruction
-  - rising edge instruction fetch?
-  - falling edge for exec?
-- 16 bit instructions word aligned
-- 16 bit registers
-- 8 registers, R7 is program counter
-- 4 bit status register
-- status register always updated on ALU operations
+# MISC16
+
+An attempt to design and build a Minimized Instruction Set Computer (MISC). The MISC should be straightforward to build on breadboards (inspired by Ben Eater) or on an FPGA development board. To achieve this the data paths and instruction set should be as simple and regular as possible while still being useable. This resulted in the following design decisions:
+
+- RISC inspired architecture
+  - Data operations only on registers, not on memory
+  - Transfer instructions to load from and store to memory
+  - Generic registers, one of which functions as the program counter
+- Fixed 16 bit instructions, word aligned
+  - For data instruction the target register and first operand register are the same. This is to allow more space for immediate constants.
+  - Shift operation require smaller immediate constants, so these are separate operations using a Shift Unit (SHU)
+  - Could not make it fit with 8 bit architecture... yet
+- 8 registers of 16 bit wide
+  - R7 is the program counter
+- 4 bit status register, C N Z V
+  - always updated
+  - only the branch instruction is conditional
+- 16 bit instruction register
+- Every instruction takes 2 clock cycles
+  - 1 cycle to fetch
+  - 1 cycle to execute
+  - no microcode, just combinatorical logic
+  - trade off is that only one type of update can be done
+    - This means branch and link are two separate instructions
+    - There is no write-back for stack operations
+- Dedicated data paths using multiplexors for the two operands and output
+  - so no tristate busses
+
+
 
 ## Data paths
 ![datapaths](comp_arch.png)
 
 ## Instruction set
 
-| Assembly         | Bits                  | IN1  | IN2| IN3 | OUT
-| ---------------- | --------------------- |:----:|:--:|:---:|:------:|
-| fetch            |                       | R7   |    | 0   | RAM->IR
-| ldr Rd, [Ra, #x] | `00dd daaa xxxx xxxx` | Ra   |    | IR  | RAM->Rd
-| str Rm, [Ra, #x] | `01mm maaa xxxx xxxx` | Ra   | Rm | IR  |
-| alu Ra, #x       | `10zz zaaa xxxx xxxx` | Ra   |    | IR  | ALU->Ra
-| b\<c\> x         | `110c cccx xxxx xxx0` | R7   |    | IR  | ALU->7
-| swi x            | `110x xxxx xxxx xxx1` | 8000 |    | IR  | ALU->7
-| shu Ra, #x       | `1110 0aaa 1zzz xxxx` | Ra   |    | IR  | ALU->Ra
-| lnk Ra           | `1110 0aaa 1111 xxxx` | R7   |    | IR  | ALU->Ra
-| alu Ra, Rm       | `1110 1aaa 0zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra
-| shu Ra, Rm       | `1110 1aaa 1zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra
+| Assembly         | Bits                  | IN1  | IN2| IN3 | OUT    | Notes
+| ---------------- | --------------------- |:----:|:--:|:---:|:------:|------
+| fetch            |                       | R7   |    | 0   | RAM->IR| IR <- [R7], R7 <- R7 + 2
+| ldr Rd, [Ra, #x] | `00dd daaa xxxx xxxx` | Ra   |    | IR  | RAM->Rd| Rd <- [Ra + #x]
+| str Rm, [Ra, #x] | `01mm maaa xxxx xxxx` | Ra   | Rm | IR  |        | Rm -> [Ra + #x]
+| alu Ra, #x       | `10zz zaaa xxxx xxxx` | Ra   |    | IR  | ALU->Ra| Ra <- ALU(Ra, #x)
+| b\<c\> x         | `110c cccx xxxx xxx0` | R7   |    | IR  | ALU->7 | R7 <- R7 + #x, if condition true
+| swi x            | `110x xxxx xxxx xxx1` | 8000 |    | IR  | ALU->7 | R7 <- 8000 + #x
+| shu Ra, #x       | `1110 0aaa 1zzz xxxx` | Ra   |    | IR  | ALU->Ra| Ra <- SHU(Ra, #x)
+| lnk Ra           | `1110 0aaa 1111 xxxx` | R7   |    | 2   | ALU->Ra| Ra <- R7 + 2
+| alu Ra, Rm       | `1110 1aaa 0zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra| Ra <- ALU(Ra, Rm)
+| shu Ra, Rm       | `1110 1aaa 1zzz 0mmm` | Ra   | Rm | IN2 | ALU->Ra| Ra <- SHU(Ra, Rm)
 
 ```txt
 R enable = fetch AND 7

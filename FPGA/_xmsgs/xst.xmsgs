@@ -5,43 +5,43 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/ARM16/debounce.v" Line 56: Result of <arg fmt="%d" index="1">14</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/misc16/FPGA/debounce.v" Line 56: Result of <arg fmt="%d" index="1">14</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/ARM16/blink.v" Line 101: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/misc16/FPGA/blink.v" Line 101: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/ARM16/blink.v" Line 115: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/misc16/FPGA/blink.v" Line 115: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/ARM16/ALU.v" Line 15: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/misc16/FPGA/ALU.v" Line 15: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/karen/ARM16/blink.v" Line 132: Assignment to <arg fmt="%s" index="1">C</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/karen/misc16/FPGA/blink.v" Line 132: Assignment to <arg fmt="%s" index="1">C</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/karen/ARM16/blink.v" Line 132: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">cin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/karen/misc16/FPGA/blink.v" Line 132: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">cin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/ARM16/RAM.v" Line 12: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/misc16/FPGA/RAM.v" Line 12: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/karen/ARM16/blink.v" Line 135: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">16</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/karen/misc16/FPGA/blink.v" Line 135: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">16</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/ARM16/blink.v" Line 172: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/misc16/FPGA/blink.v" Line 191: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/ARM16/blink.v" Line 197: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/misc16/FPGA/blink.v" Line 218: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/ARM16/vga.v" Line 34: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">14</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/karen/misc16/FPGA/vga.v" Line 34: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">14</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/karen/ARM16/blink.v" Line 226: Assignment to <arg fmt="%s" index="1">addr</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/karen/misc16/FPGA/blink.v" Line 247: Assignment to <arg fmt="%s" index="1">addr</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/karen/ARM16/blink.v" Line 135: Net &lt;<arg fmt="%s" index="1">clk</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/karen/misc16/FPGA/blink.v" Line 135: Net &lt;<arg fmt="%s" index="1">clk</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SW6</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -62,19 +62,19 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">BTNS</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/karen/ARM16/blink.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">C</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu_</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/karen/misc16/FPGA/blink.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">C</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu_</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/karen/ARM16/blink.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">N</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu_</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/karen/misc16/FPGA/blink.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">N</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu_</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/karen/ARM16/blink.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">Z</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu_</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/karen/misc16/FPGA/blink.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">Z</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu_</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/karen/ARM16/blink.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">V</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu_</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/karen/misc16/FPGA/blink.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">V</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu_</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/karen/ARM16/blink.v</arg>&quot; line <arg fmt="%s" index="2">224</arg>: Output port &lt;<arg fmt="%s" index="3">addr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">vga_</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/karen/misc16/FPGA/blink.v</arg>&quot; line <arg fmt="%s" index="2">245</arg>: Output port &lt;<arg fmt="%s" index="3">addr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">vga_</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">clk</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.

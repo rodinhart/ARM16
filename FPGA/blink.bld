@@ -5,7 +5,7 @@ Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-2 blink.ngc
 blink.ngd
 
-Reading NGO file "/home/karen/ARM16/blink.ngc" ...
+Reading NGO file "/home/karen/misc16/FPGA/blink.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,7 +27,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 110064 kilobytes
+Total memory usage is 110180 kilobytes
 
 Writing NGD file "blink.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

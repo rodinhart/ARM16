@@ -153,27 +153,48 @@ microcode microcode_(exec, clock);
 
 assign r7_count = ~exec;
 
-assign in1_select = ~exec ?
-  3'd7 :
-  ir_reg[10:8];
+assign in1_select
+  = ~exec
+  || ir_reg[15:13] == 3'b110
+  || ir_reg[15:11] == 5'b11100 && ir_reg[7:4] == 4'b1111
+  ? 3'd7 // fetch, b, lnk
+  
+  : ir_reg[10:8];
 
-assign in2_select = ir_reg[2:0];
+assign in2_select
+  = ir_reg[15:14] == 2'b01
+  ? ir_reg[13:11] // str
+  
+  : ir_reg[2:0]; // alu, shu
 
-assign in3_reg = ~exec ?
-	16'h0 :
-	ir_reg[15:14] == 2'b10 ? {8'h0, ir_reg[7:0]} :
-	in2_reg; // extend sign for x
+assign in3_reg
+  = ~exec
+  ? 16'h0 // fetch
+  
+  : ir_reg[15:14] != 2'b11
+  ? {8'b00000000, ir_reg[7:0]} // ldr, str, alu#
+  
+  : ir_reg[15:13] == 3'b110
+  ? { ir_reg[8], ir_reg[8], ir_reg[8], ir_reg[8], ir_reg[8], ir_reg[8], ir_reg[8], ir_reg[8:0] } // b
+  
+  : ir_reg[15:11] == 5'b11100
+  ? { 12'b000000000000, ir_reg[3:0] } // shu#, lnk
+  
+  : in2_reg; // alu, shu
 	
 assign alu_op =
-	~exec ? 3'b100 :
-	ir_reg[15:14] == 2'b10 ? ir_reg[13:11] :
-	ir_reg[6:4];
+	~exec ? 3'b100 : // fetch
+	ir_reg[15:14] == 2'b10 ? ir_reg[13:11] : // alu#
+	ir_reg[15:13] == 3'b110 ? 3'b100 : // b
+	ir_reg[6:4]; // alu
 
 assign out_ramnotalu = ~exec ? 1 : 0;
 
 assign ir_load = ~exec;
 wire [2:0] temp_load;
-assign temp_load = ir_reg[10:8];
+assign temp_load =
+  ir_reg[15:14] == 2'b10 ? ir_reg[10:8] : // alu#
+  3'd7; // b
 assign r0_load = exec && temp_load == 3'b000;
 assign r1_load = exec && temp_load == 3'b001;
 assign r2_load = exec && temp_load == 3'b010;

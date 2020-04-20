@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-04-07T13:39:36</DateModified>
+  <DateModified>2020-04-20T19:44:16</DateModified>
   <ModuleName>blink</ModuleName>
   <SummaryTimeStamp>2020-04-01T20:01:57</SummaryTimeStamp>
-  <SavedFilePath>/home/karen/ARM16/iseconfig/blink.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/karen/ARM16</ImplementationReportsDirectory>
+  <SavedFilePath>/home/karen/misc16/FPGA/iseconfig/blink.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/karen/misc16/FPGA/</ImplementationReportsDirectory>
   <DateInitialized>2020-03-30T19:44:34</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

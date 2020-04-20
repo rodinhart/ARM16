@@ -108,25 +108,25 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/karen/ARM16/SSD_Decoder.v" into library work
+Analyzing Verilog file "/home/karen/misc16/FPGA/SSD_Decoder.v" into library work
 Parsing module <SSD_Decoder>.
-Analyzing Verilog file "/home/karen/ARM16/vga.v" into library work
+Analyzing Verilog file "/home/karen/misc16/FPGA/vga.v" into library work
 Parsing module <vga>.
-Analyzing Verilog file "/home/karen/ARM16/segments.v" into library work
+Analyzing Verilog file "/home/karen/misc16/FPGA/segments.v" into library work
 Parsing module <segments>.
-Analyzing Verilog file "/home/karen/ARM16/register.v" into library work
+Analyzing Verilog file "/home/karen/misc16/FPGA/register.v" into library work
 Parsing module <register>.
-Analyzing Verilog file "/home/karen/ARM16/RAM.v" into library work
+Analyzing Verilog file "/home/karen/misc16/FPGA/RAM.v" into library work
 Parsing module <RAM>.
-Analyzing Verilog file "/home/karen/ARM16/programcounter.v" into library work
+Analyzing Verilog file "/home/karen/misc16/FPGA/programcounter.v" into library work
 Parsing module <programcounter>.
-Analyzing Verilog file "/home/karen/ARM16/debounce.v" into library work
+Analyzing Verilog file "/home/karen/misc16/FPGA/debounce.v" into library work
 Parsing module <debounce>.
-Analyzing Verilog file "/home/karen/ARM16/clock25mhz.v" into library work
+Analyzing Verilog file "/home/karen/misc16/FPGA/clock25mhz.v" into library work
 Parsing module <clock25mhz>.
-Analyzing Verilog file "/home/karen/ARM16/ALU.v" into library work
+Analyzing Verilog file "/home/karen/misc16/FPGA/ALU.v" into library work
 Parsing module <ALU>.
-Analyzing Verilog file "/home/karen/ARM16/blink.v" into library work
+Analyzing Verilog file "/home/karen/misc16/FPGA/blink.v" into library work
 Parsing module <blink>.
 Parsing module <microcode>.
 
@@ -137,66 +137,66 @@ Parsing module <microcode>.
 Elaborating module <blink>.
 
 Elaborating module <debounce>.
-WARNING:HDLCompiler:413 - "/home/karen/ARM16/debounce.v" Line 56: Result of 14-bit expression is truncated to fit in 13-bit target.
+WARNING:HDLCompiler:413 - "/home/karen/misc16/FPGA/debounce.v" Line 56: Result of 14-bit expression is truncated to fit in 13-bit target.
 
 Elaborating module <register>.
 
 Elaborating module <programcounter>.
-WARNING:HDLCompiler:413 - "/home/karen/ARM16/blink.v" Line 101: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/karen/ARM16/blink.v" Line 115: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/karen/misc16/FPGA/blink.v" Line 101: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/karen/misc16/FPGA/blink.v" Line 115: Result of 32-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <ALU>.
-WARNING:HDLCompiler:413 - "/home/karen/ARM16/ALU.v" Line 15: Result of 32-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:1127 - "/home/karen/ARM16/blink.v" Line 132: Assignment to C ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/karen/ARM16/blink.v" Line 132: Size mismatch in connection of port <cin>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:413 - "/home/karen/misc16/FPGA/ALU.v" Line 15: Result of 32-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:1127 - "/home/karen/misc16/FPGA/blink.v" Line 132: Assignment to C ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/karen/misc16/FPGA/blink.v" Line 132: Size mismatch in connection of port <cin>. Formal port size is 1-bit while actual signal size is 32-bit.
 
 Elaborating module <RAM>.
-WARNING:HDLCompiler:413 - "/home/karen/ARM16/RAM.v" Line 12: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:189 - "/home/karen/ARM16/blink.v" Line 135: Size mismatch in connection of port <addr>. Formal port size is 4-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:413 - "/home/karen/misc16/FPGA/RAM.v" Line 12: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:189 - "/home/karen/misc16/FPGA/blink.v" Line 135: Size mismatch in connection of port <addr>. Formal port size is 4-bit while actual signal size is 16-bit.
 
 Elaborating module <microcode>.
-WARNING:HDLCompiler:413 - "/home/karen/ARM16/blink.v" Line 172: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/karen/misc16/FPGA/blink.v" Line 191: Result of 32-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <segments>.
 
 Elaborating module <SSD_Decoder>.
-WARNING:HDLCompiler:413 - "/home/karen/ARM16/blink.v" Line 197: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/karen/misc16/FPGA/blink.v" Line 218: Result of 32-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <clock25mhz>.
 
 Elaborating module <vga>.
-WARNING:HDLCompiler:413 - "/home/karen/ARM16/vga.v" Line 34: Result of 32-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:1127 - "/home/karen/ARM16/blink.v" Line 226: Assignment to addr ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "/home/karen/ARM16/blink.v" Line 135: Net <clk> does not have a driver.
+WARNING:HDLCompiler:413 - "/home/karen/misc16/FPGA/vga.v" Line 34: Result of 32-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:1127 - "/home/karen/misc16/FPGA/blink.v" Line 247: Assignment to addr ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/karen/misc16/FPGA/blink.v" Line 135: Net <clk> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <blink>.
-    Related source file is "/home/karen/ARM16/blink.v".
+    Related source file is "/home/karen/misc16/FPGA/blink.v".
 WARNING:Xst:647 - Input <SW6> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <SW7> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BTNL> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BTNU> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BTND> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BTNS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/karen/ARM16/blink.v" line 132: Output port <C> of the instance <alu_> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/karen/ARM16/blink.v" line 132: Output port <N> of the instance <alu_> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/karen/ARM16/blink.v" line 132: Output port <Z> of the instance <alu_> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/karen/ARM16/blink.v" line 132: Output port <V> of the instance <alu_> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/karen/ARM16/blink.v" line 224: Output port <addr> of the instance <vga_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/karen/misc16/FPGA/blink.v" line 132: Output port <C> of the instance <alu_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/karen/misc16/FPGA/blink.v" line 132: Output port <N> of the instance <alu_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/karen/misc16/FPGA/blink.v" line 132: Output port <Z> of the instance <alu_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/karen/misc16/FPGA/blink.v" line 132: Output port <V> of the instance <alu_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/karen/misc16/FPGA/blink.v" line 245: Output port <addr> of the instance <vga_> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <clk> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <ram_load> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 32-bit 8-to-1 multiplexer for signal <n0104> created at line 102.
-    Found 32-bit 8-to-1 multiplexer for signal <n0106> created at line 116.
-    Found 32-bit 15-to-1 multiplexer for signal <n0114> created at line 198.
+    Found 32-bit 8-to-1 multiplexer for signal <n0116> created at line 102.
+    Found 32-bit 8-to-1 multiplexer for signal <n0118> created at line 116.
+    Found 32-bit 15-to-1 multiplexer for signal <n0126> created at line 219.
     Summary:
-	inferred   9 Multiplexer(s).
+	inferred  14 Multiplexer(s).
 Unit <blink> synthesized.
 
 Synthesizing Unit <debounce>.
-    Related source file is "/home/karen/ARM16/debounce.v".
+    Related source file is "/home/karen/misc16/FPGA/debounce.v".
         N = 13
     Found 1-bit register for signal <DFF2>.
     Found 13-bit register for signal <delaycount_reg>.
@@ -209,14 +209,14 @@ Synthesizing Unit <debounce>.
 Unit <debounce> synthesized.
 
 Synthesizing Unit <register>.
-    Related source file is "/home/karen/ARM16/register.v".
+    Related source file is "/home/karen/misc16/FPGA/register.v".
     Found 16-bit register for signal <q>.
     Summary:
 	inferred  16 D-type flip-flop(s).
 Unit <register> synthesized.
 
 Synthesizing Unit <programcounter>.
-    Related source file is "/home/karen/ARM16/programcounter.v".
+    Related source file is "/home/karen/misc16/FPGA/programcounter.v".
     Found 16-bit register for signal <q>.
     Found 16-bit adder for signal <q[15]_GND_4_o_add_3_OUT> created at line 15.
     Summary:
@@ -226,7 +226,7 @@ Synthesizing Unit <programcounter>.
 Unit <programcounter> synthesized.
 
 Synthesizing Unit <ALU>.
-    Related source file is "/home/karen/ARM16/ALU.v".
+    Related source file is "/home/karen/misc16/FPGA/ALU.v".
     Found 17-bit adder for signal <n0081[16:0]> created at line 21.
     Found 32-bit adder for signal <GND_5_o_GND_5_o_add_15_OUT> created at line 22.
     Found 32-bit adder for signal <GND_5_o_GND_5_o_add_19_OUT> created at line 23.
@@ -237,7 +237,7 @@ Synthesizing Unit <ALU>.
 Unit <ALU> synthesized.
 
 Synthesizing Unit <RAM>.
-    Related source file is "/home/karen/ARM16/RAM.v".
+    Related source file is "/home/karen/misc16/FPGA/RAM.v".
 WARNING:Xst:647 - Input <d> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <load> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -246,14 +246,14 @@ WARNING:Xst:647 - Input <load> is never used. This port will be preserved and le
 Unit <RAM> synthesized.
 
 Synthesizing Unit <microcode>.
-    Related source file is "/home/karen/ARM16/blink.v".
+    Related source file is "/home/karen/misc16/FPGA/blink.v".
     Found 1-bit register for signal <exec>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <microcode> synthesized.
 
 Synthesizing Unit <segments>.
-    Related source file is "/home/karen/ARM16/segments.v".
+    Related source file is "/home/karen/misc16/FPGA/segments.v".
     Found 20-bit register for signal <count>.
     Found 20-bit adder for signal <count[19]_GND_8_o_add_1_OUT> created at line 11.
     Found 28-bit shifter logical right for signal <n0017> created at line 15
@@ -264,14 +264,14 @@ Synthesizing Unit <segments>.
 Unit <segments> synthesized.
 
 Synthesizing Unit <SSD_Decoder>.
-    Related source file is "/home/karen/ARM16/SSD_Decoder.v".
+    Related source file is "/home/karen/misc16/FPGA/SSD_Decoder.v".
     Found 16x7-bit Read Only RAM for signal <SSD_out>
     Summary:
 	inferred   1 RAM(s).
 Unit <SSD_Decoder> synthesized.
 
 Synthesizing Unit <clock25mhz>.
-    Related source file is "/home/karen/ARM16/clock25mhz.v".
+    Related source file is "/home/karen/misc16/FPGA/clock25mhz.v".
     Found 2-bit register for signal <cnt>.
     Found 2-bit adder for signal <cnt[1]_GND_10_o_add_1_OUT> created at line 10.
     Summary:
@@ -280,7 +280,7 @@ Synthesizing Unit <clock25mhz>.
 Unit <clock25mhz> synthesized.
 
 Synthesizing Unit <vga>.
-    Related source file is "/home/karen/ARM16/vga.v".
+    Related source file is "/home/karen/misc16/FPGA/vga.v".
     Found 9-bit register for signal <vcnt>.
     Found 10-bit register for signal <hcnt>.
     Found 8-bit subtractor for signal <GND_11_o_GND_11_o_sub_15_OUT> created at line 34.
@@ -334,10 +334,10 @@ Macro Statistics
  10-bit comparator lessequal                           : 2
  9-bit comparator greater                              : 1
  9-bit comparator lessequal                            : 3
-# Multiplexers                                         : 15
+# Multiplexers                                         : 20
  1-bit 2-to-1 multiplexer                              : 2
- 16-bit 2-to-1 multiplexer                             : 4
- 3-bit 2-to-1 multiplexer                              : 3
+ 16-bit 2-to-1 multiplexer                             : 6
+ 3-bit 2-to-1 multiplexer                              : 6
  32-bit 15-to-1 multiplexer                            : 1
  32-bit 2-to-1 multiplexer                             : 1
  32-bit 7-to-1 multiplexer                             : 1
@@ -410,10 +410,10 @@ Macro Statistics
  10-bit comparator lessequal                           : 2
  9-bit comparator greater                              : 1
  9-bit comparator lessequal                            : 3
-# Multiplexers                                         : 14
+# Multiplexers                                         : 19
  1-bit 2-to-1 multiplexer                              : 2
- 16-bit 2-to-1 multiplexer                             : 4
- 3-bit 2-to-1 multiplexer                              : 3
+ 16-bit 2-to-1 multiplexer                             : 6
+ 3-bit 2-to-1 multiplexer                              : 6
  32-bit 15-to-1 multiplexer                            : 1
  32-bit 2-to-1 multiplexer                             : 1
  32-bit 7-to-1 multiplexer                             : 1
@@ -451,10 +451,9 @@ INFO:Xst:2261 - The FF/Latch <clock25mhz_/cnt_1> in Unit <blink> is equivalent t
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block blink, actual ratio is 6.
-FlipFlop ir_/q_10 has been replicated 2 time(s)
-FlipFlop ir_/q_8 has been replicated 1 time(s)
-FlipFlop ir_/q_9 has been replicated 1 time(s)
-FlipFlop microcode_/exec has been replicated 5 time(s)
+FlipFlop ir_/q_14 has been replicated 1 time(s)
+FlipFlop ir_/q_15 has been replicated 2 time(s)
+FlipFlop microcode_/exec has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -462,8 +461,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 209
- Flip-Flops                                            : 209
+# Registers                                            : 205
+ Flip-Flops                                            : 205
 
 =========================================================================
 
@@ -486,23 +485,23 @@ Top Level Output File Name         : blink.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 701
+# BELS                             : 775
 #      GND                         : 1
 #      INV                         : 7
 #      LUT1                        : 77
-#      LUT2                        : 11
-#      LUT3                        : 14
-#      LUT4                        : 59
-#      LUT5                        : 61
-#      LUT6                        : 215
+#      LUT2                        : 8
+#      LUT3                        : 49
+#      LUT4                        : 55
+#      LUT5                        : 76
+#      LUT6                        : 249
 #      MUXCY                       : 107
-#      MUXF7                       : 35
+#      MUXF7                       : 32
 #      VCC                         : 1
 #      XORCY                       : 113
-# FlipFlops/Latches                : 209
+# FlipFlops/Latches                : 205
 #      FD                          : 35
-#      FDE                         : 158
-#      FDR                         : 16
+#      FDE                         : 157
+#      FDR                         : 13
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
@@ -517,15 +516,15 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             209  out of  18224     1%  
- Number of Slice LUTs:                  444  out of   9112     4%  
-    Number used as Logic:               444  out of   9112     4%  
+ Number of Slice Registers:             205  out of  18224     1%  
+ Number of Slice LUTs:                  521  out of   9112     5%  
+    Number used as Logic:               521  out of   9112     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    516
-   Number with an unused Flip Flop:     307  out of    516    59%  
-   Number with an unused LUT:            72  out of    516    13%  
-   Number of fully used LUT-FF pairs:   137  out of    516    26%  
+ Number of LUT Flip Flop pairs used:    598
+   Number with an unused Flip Flop:     393  out of    598    65%  
+   Number with an unused LUT:            77  out of    598    12%  
+   Number of fully used LUT-FF pairs:   128  out of    598    21%  
    Number of unique control sets:        14
 
 IO Utilization: 
@@ -556,7 +555,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-_debounce/DB_out                   | BUFG                   | 154   |
+_debounce/DB_out                   | BUFG                   | 150   |
 GCLK0                              | BUFGP                  | 36    |
 clock25mhz_/cnt_1                  | NONE(vga_/hcnt_9)      | 19    |
 -----------------------------------+------------------------+-------+
@@ -570,9 +569,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 9.107ns (Maximum Frequency: 109.806MHz)
+   Minimum period: 11.216ns (Maximum Frequency: 89.158MHz)
    Minimum input arrival time before clock: 2.083ns
-   Maximum output required time after clock: 17.843ns
+   Maximum output required time after clock: 20.020ns
    Maximum combinational path delay: 12.024ns
 
 Timing Details:
@@ -581,35 +580,36 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock '_debounce/DB_out'
-  Clock period: 9.107ns (frequency: 109.806MHz)
-  Total number of paths / destination ports: 820317 / 302
+  Clock period: 11.216ns (frequency: 89.158MHz)
+  Total number of paths / destination ports: 2151607 / 297
 -------------------------------------------------------------------------
-Delay:               9.107ns (Levels of Logic = 11)
-  Source:            ir_/q_8_1 (FF)
-  Destination:       r6_/q_15 (FF)
+Delay:               11.216ns (Levels of Logic = 12)
+  Source:            ir_/q_6 (FF)
+  Destination:       r6_/q_14 (FF)
   Source Clock:      _debounce/DB_out rising
   Destination Clock: _debounce/DB_out rising
 
-  Data Path: ir_/q_8_1 to r6_/q_15
+  Data Path: ir_/q_6 to r6_/q_14
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.525   0.834  ir_/q_8_1 (ir_/q_8_1)
-     LUT2:I0->O           15   0.250   1.610  Mmux_in1_select11_1 (Mmux_in1_select11)
-     LUT6:I0->O            1   0.254   0.000  Mmux_n0104_2_f7_G (N135)
-     MUXF7:I1->O           5   0.175   0.841  Mmux_n0104_2_f7 (n0104<0>)
+     FDE:C->Q              6   0.525   1.306  ir_/q_6 (ir_/q_6)
+     LUT5:I0->O            3   0.254   0.766  Mmux_in1_select12_SW0 (N01)
+     LUT6:I5->O           16   0.254   1.182  Mmux_in1_select31 (in1_select<2>)
+     LUT6:I5->O            5   0.254   0.841  Mmux_n0116_2_f7 (n0116<0>)
      LUT6:I5->O            1   0.254   0.000  alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_lut<0> (alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_lut<0>)
      MUXCY:S->O            1   0.215   0.000  alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_cy<0> (alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_cy<0>)
-     XORCY:CI->O           2   0.206   0.726  alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_xor<1> (alu_/GND_5_o_GND_5_o_add_19_OUT<1>)
+     XORCY:CI->O           4   0.206   0.804  alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_xor<1> (alu_/GND_5_o_GND_5_o_add_19_OUT<1>)
      LUT1:I0->O            1   0.254   0.000  alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_cy<1>_rt (alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_cy<1>_rt)
      MUXCY:S->O            1   0.215   0.000  alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_cy<1> (alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_cy<1>)
-     XORCY:CI->O           1   0.206   0.682  alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_xor<2> (alu_/GND_5_o_GND_5_o_add_15_OUT<2>)
-     LUT6:I5->O           12   0.254   1.297  alu_/Mmux_n0042103 (alu_out<2>)
-     LUT6:I3->O            9   0.235   0.000  out_reg<15>4 (out_reg<15>)
-     FDE:D                     0.074          r6_/q_15
+     XORCY:CI->O           3   0.206   0.766  alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_xor<2> (alu_/GND_5_o_GND_5_o_add_15_OUT<2>)
+     LUT6:I5->O           11   0.254   1.039  alu_/Mmux_n0042103 (alu_out<2>)
+     LUT6:I5->O           11   0.254   1.039  out_reg<10>11 (out_reg<10>_bdd0)
+     LUT5:I4->O            9   0.254   0.000  out_reg<9>3 (out_reg<9>)
+     FDE:D                     0.074          r6_/q_9
     ----------------------------------------
-    Total                      9.107ns (3.117ns logic, 5.990ns route)
-                                       (34.2% logic, 65.8% route)
+    Total                     11.216ns (3.473ns logic, 7.743ns route)
+                                       (31.0% logic, 69.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GCLK0'
@@ -648,10 +648,10 @@ Delay:               3.273ns (Levels of Logic = 14)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock25mhz_/cnt_1'
-  Clock period: 4.452ns (frequency: 224.618MHz)
+  Clock period: 4.556ns (frequency: 219.491MHz)
   Total number of paths / destination ports: 290 / 38
 -------------------------------------------------------------------------
-Delay:               4.452ns (Levels of Logic = 2)
+Delay:               4.556ns (Levels of Logic = 2)
   Source:            vga_/hcnt_8 (FF)
   Destination:       vga_/hcnt_9 (FF)
   Source Clock:      clock25mhz_/cnt_1 rising
@@ -662,12 +662,12 @@ Delay:               4.452ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              5   0.525   1.271  vga_/hcnt_8 (vga_/hcnt_8)
-     LUT5:I0->O            1   0.254   0.682  vga_/GND_11_o_GND_11_o_equal_2_o<9>_SW0 (N2)
-     LUT6:I5->O           10   0.254   1.007  vga_/GND_11_o_GND_11_o_equal_2_o<9> (vga_/GND_11_o_GND_11_o_equal_2_o)
+     LUT5:I0->O            1   0.254   0.790  vga_/GND_11_o_GND_11_o_equal_2_o<9>_SW0 (N4)
+     LUT6:I4->O           10   0.250   1.007  vga_/GND_11_o_GND_11_o_equal_2_o<9> (vga_/GND_11_o_GND_11_o_equal_2_o)
      FDR:R                     0.459          vga_/hcnt_0
     ----------------------------------------
-    Total                      4.452ns (1.492ns logic, 2.960ns route)
-                                       (33.5% logic, 66.5% route)
+    Total                      4.556ns (1.488ns logic, 3.068ns route)
+                                       (32.7% logic, 67.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GCLK0'
@@ -690,59 +690,60 @@ Offset:              2.083ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock '_debounce/DB_out'
-  Total number of paths / destination ports: 649287 / 9
+  Total number of paths / destination ports: 1593356 / 9
 -------------------------------------------------------------------------
-Offset:              17.843ns (Levels of Logic = 16)
-  Source:            ir_/q_8_1 (FF)
-  Destination:       CA (PAD)
+Offset:              20.020ns (Levels of Logic = 17)
+  Source:            ir_/q_6 (FF)
+  Destination:       CD (PAD)
   Source Clock:      _debounce/DB_out rising
 
-  Data Path: ir_/q_8_1 to CA
+  Data Path: ir_/q_6 to CD
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.525   0.834  ir_/q_8_1 (ir_/q_8_1)
-     LUT2:I0->O           15   0.250   1.610  Mmux_in1_select11_1 (Mmux_in1_select11)
-     LUT6:I0->O            1   0.254   0.000  Mmux_n0104_2_f7_G (N135)
-     MUXF7:I1->O           5   0.175   0.841  Mmux_n0104_2_f7 (n0104<0>)
+     FDE:C->Q              6   0.525   1.306  ir_/q_6 (ir_/q_6)
+     LUT5:I0->O            3   0.254   0.766  Mmux_in1_select12_SW0 (N01)
+     LUT6:I5->O           16   0.254   1.182  Mmux_in1_select31 (in1_select<2>)
+     LUT6:I5->O            5   0.254   0.841  Mmux_n0116_2_f7 (n0116<0>)
      LUT6:I5->O            1   0.254   0.000  alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_lut<0> (alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_lut<0>)
      MUXCY:S->O            1   0.215   0.000  alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_cy<0> (alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_cy<0>)
-     XORCY:CI->O           2   0.206   0.726  alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_xor<1> (alu_/GND_5_o_GND_5_o_add_19_OUT<1>)
+     XORCY:CI->O           4   0.206   0.804  alu_/Madd_GND_5_o_GND_5_o_add_19_OUT_xor<1> (alu_/GND_5_o_GND_5_o_add_19_OUT<1>)
      LUT1:I0->O            1   0.254   0.000  alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_cy<1>_rt (alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_cy<1>_rt)
-     XORCY:LI->O           1   0.149   0.682  alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_xor<1> (alu_/GND_5_o_GND_5_o_add_15_OUT<1>)
-     LUT6:I5->O            1   0.254   0.000  alu_/Mmux_n004293_G (N131)
-     MUXF7:I1->O          13   0.175   1.326  alu_/Mmux_n004293 (alu_out<1>)
-     LUT6:I3->O            9   0.235   1.084  out_reg<4>4 (out_reg<4>)
-     LUT3:I1->O            1   0.250   0.910  LD3_89 (LD3_89)
-     LUT6:I3->O            1   0.235   1.112  segments_/Sh403 (segments_/Sh403)
-     LUT6:I1->O            7   0.254   1.186  segments_/Sh407 (segments_/Sh40)
-     LUT4:I0->O            1   0.254   0.681  segments_/decoder_/Mram_SSD_out21 (CC_OBUF)
-     OBUF:I->O                 2.912          CC_OBUF (CC)
+     MUXCY:S->O            1   0.215   0.000  alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_cy<1> (alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_cy<1>)
+     XORCY:CI->O           3   0.206   0.766  alu_/Madd_GND_5_o_GND_5_o_add_15_OUT_xor<2> (alu_/GND_5_o_GND_5_o_add_15_OUT<2>)
+     LUT6:I5->O           11   0.254   1.039  alu_/Mmux_n0042103 (alu_out<2>)
+     LUT6:I5->O           11   0.254   1.039  out_reg<10>11 (out_reg<10>_bdd0)
+     LUT5:I4->O            9   0.254   1.084  out_reg<7>3 (out_reg<7>)
+     LUT3:I1->O            1   0.250   0.910  LD3_812 (LD3_812)
+     LUT6:I3->O            1   0.235   1.112  segments_/Sh433 (segments_/Sh433)
+     LUT6:I1->O            7   0.254   1.186  segments_/Sh437 (segments_/Sh43)
+     LUT4:I0->O            1   0.254   0.681  segments_/decoder_/Mram_SSD_out51 (CF_OBUF)
+     OBUF:I->O                 2.912          CF_OBUF (CF)
     ----------------------------------------
-    Total                     17.843ns (6.851ns logic, 10.992ns route)
-                                       (38.4% logic, 61.6% route)
+    Total                     20.020ns (7.304ns logic, 12.716ns route)
+                                       (36.5% logic, 63.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GCLK0'
   Total number of paths / destination ports: 106 / 11
 -------------------------------------------------------------------------
-Offset:              8.788ns (Levels of Logic = 4)
+Offset:              8.567ns (Levels of Logic = 4)
   Source:            segments_/count_19 (FF)
-  Destination:       CF (PAD)
+  Destination:       CD (PAD)
   Source Clock:      GCLK0 rising
 
-  Data Path: segments_/count_19 to CF
+  Data Path: segments_/count_19 to CD
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q              15   0.525   1.610  segments_/count_19 (segments_/count_19)
-     LUT6:I0->O            1   0.254   1.112  segments_/Sh432 (segments_/Sh432)
-     LUT6:I1->O            7   0.254   1.186  segments_/Sh437 (segments_/Sh43)
+     LUT6:I0->O            1   0.254   0.910  segments_/Sh432 (segments_/Sh432)
+     LUT6:I3->O            7   0.235   1.186  segments_/Sh437 (segments_/Sh43)
      LUT4:I0->O            1   0.254   0.681  segments_/decoder_/Mram_SSD_out51 (CF_OBUF)
      OBUF:I->O                 2.912          CF_OBUF (CF)
     ----------------------------------------
-    Total                      8.788ns (4.199ns logic, 4.589ns route)
-                                       (47.8% logic, 52.2% route)
+    Total                      8.567ns (4.180ns logic, 4.387ns route)
+                                       (48.8% logic, 51.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock25mhz_/cnt_1'
@@ -758,7 +759,7 @@ Offset:              7.067ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              3   0.525   1.221  vga_/vcnt_7 (vga_/vcnt_7)
-     LUT6:I0->O            1   0.254   0.958  vga_/index<1>_SW0 (N4)
+     LUT6:I0->O            1   0.254   0.958  vga_/index<1>_SW0 (N6)
      LUT4:I0->O            8   0.254   0.943  vga_/index<1> (BLUE0_OBUF)
      OBUF:I->O                 2.912          RED0_OBUF (RED0)
     ----------------------------------------
@@ -771,19 +772,19 @@ Timing constraint: Default path analysis
 -------------------------------------------------------------------------
 Delay:               12.024ns (Levels of Logic = 7)
   Source:            SW0 (PAD)
-  Destination:       CA (PAD)
+  Destination:       CD (PAD)
 
-  Data Path: SW0 to CA
+  Data Path: SW0 to CD
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            65   1.328   2.392  SW0_IBUF (LD0_OBUF)
-     LUT6:I0->O            1   0.254   0.682  LD3_75 (LD3_75)
-     LUT5:I4->O            1   0.254   0.682  segments_/Sh402_SW0 (N124)
-     LUT6:I5->O            1   0.254   0.910  segments_/Sh402 (segments_/Sh402)
-     LUT6:I3->O            7   0.235   1.186  segments_/Sh407 (segments_/Sh40)
-     LUT4:I0->O            1   0.254   0.681  segments_/decoder_/Mram_SSD_out21 (CC_OBUF)
-     OBUF:I->O                 2.912          CC_OBUF (CC)
+     LUT6:I0->O            1   0.254   0.682  LD3_77 (LD3_77)
+     LUT5:I4->O            1   0.254   0.682  segments_/Sh412_SW0 (N217)
+     LUT6:I5->O            1   0.254   0.910  segments_/Sh412 (segments_/Sh412)
+     LUT6:I3->O            7   0.235   1.186  segments_/Sh417 (segments_/Sh41)
+     LUT4:I0->O            1   0.254   0.681  segments_/decoder_/Mram_SSD_out31 (CD_OBUF)
+     OBUF:I->O                 2.912          CD_OBUF (CD)
     ----------------------------------------
     Total                     12.024ns (5.491ns logic, 6.533ns route)
                                        (45.7% logic, 54.3% route)
@@ -806,7 +807,7 @@ Clock to Setup on destination clock _debounce/DB_out
                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------+---------+---------+---------+---------+
-_debounce/DB_out|    9.107|         |         |         |
+_debounce/DB_out|   11.216|         |         |         |
 ----------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock25mhz_/cnt_1
@@ -814,19 +815,19 @@ Clock to Setup on destination clock clock25mhz_/cnt_1
                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------+---------+---------+---------+---------+
-clock25mhz_/cnt_1|    4.452|         |         |         |
+clock25mhz_/cnt_1|    4.556|         |         |         |
 -----------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.62 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.81 secs
  
 --> 
 
 
-Total memory usage is 131100 kilobytes
+Total memory usage is 130668 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   26 (   0 filtered)

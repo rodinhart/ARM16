@@ -31,6 +31,8 @@ An attempt to design and build a Minimized Instruction Set Computer (MISC). The 
 ## Data paths
 ![datapaths](comp_arch.png)
 
+note: In the diagram above the ALU block represents both ALU and SHU
+
 ## Instruction set
 
 | Assembly         | Bits                  | IN1  | IN2| IN3 | OUT    | Notes
